@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
-<title>Decoderland™</title>
+<title>ISMN-13</title>
 <!-- ---------------------------------------------------------------------------
    PROJECT:  StoreCards Application
-   VERSION:  8.1.162
+   VERSION:  9.0.162
    COPYRIGHT © 2017-2025 Rezo Mesarkishvili. All rights reserved.
 ************************************************************************************
 * REPRODUCTION OF ANY KIND, IN WHOLE OR IN PART IN ANY FORM IS STRICTLY PROHIBITED *
 ************************************************************************************
    DESCRIPTION:   Decoderland™
-   FILE NAME:     HTML/en/Scanner.html
+   FILE NAME:     HTML/en/TypeISMN13.html
    LANGUAGE:      English
    AUTHOR:        Rezo Mesarkishvili ( rezo.mesarkishvili@gmail.com )
-   LAST REVISION: August 18, 2025 by RM
+   LAST REVISION: October 24, 2025 by RM
 ---------------------------------------------------------------------------- -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -20,288 +20,61 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
 <link rel="styleSheet" type="text/css" href="../Styles/Common.css" />
-<style>
-p
-{
-   margin-bottom:6px;
-   padding-bottom:0px;
-}
-ul
-{
-   margin-left:16px;
-   margin-top:0px;
-   padding-top:0px;
-   margin-bottom:12px;
-}
-ul ul
-{
-   list-style: none;
-   margin-left:0px;
-   padding-left:0px;
-}
-ul ul li::before
-{
-   content: "- ";
-   position: relative;
-}
-</style>
 <script type="text/javascript" charset="UTF-8" src="../Scripts/SmoothScroll.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../Scripts/Common.js"></script>
 
 <body onLoad="onLoadPage()">
 
    <!-- Navigation -->
-   <table cellPadding="0px" cellSpacing="0px" style="width:100%">
+   <table cellPadding="0px" cellSpacing="0px" style="width:100%;margin-bottom:24px">
       <tr>
-         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="AppleWallet.html"><i>&#x25C0;&nbsp;&nbsp;Apple Wallet</i></a></li></td>
+         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="TypeISBN13.html"><i>&#x25C0;&nbsp;&nbsp;ISBN-13</i></a></li></td>
          <td><nobr> &nbsp; &nbsp; </nobr></td>
-         <td class="RT-Align"><a id="nextTopic" class="Link Smaller" href="TypeCode128.html"><i>Code-128&nbsp;&nbsp;&#x25B6;</i></a></li></td>
+         <td class="RT-Align"><a id="nextTopic" class="Link Smaller" href="TypeISSN13.html"><i>ISSN-13&nbsp;&nbsp;&#x25B6;</i></a></li></td>
       </tr>
    </table>
 
-   <p class="SuperTitle"><i>Scan. Know. Save.</i></p>
-   <div class="SuperTitle"><img id="PageIcon" class="PageIcon" src="../Images/ScannerW.png" width="56px"><br>Decoderland™</div>
-   <div class="Title">Analyze barcode and text from camera, image, or keyboard input.</div>
+   <p class="SuperTitle">Decoderland™</p>
+   <div style="text-align:center"><img id="PageIcon2" src="../Images/TypeISMN13.gif" width="226px"></div>
+   <div class="Title">ISMN-13</div>
 
-   <p style="margin-bottom:16px">
-      The autonomous decoder - Decoderland™ can scan and decode various types of barcodes from camera and still image, text from camera, still image and keyboard input.
-      Below is a list of some of the data types it can process.
+   <p><a class="Link" href="Scanner.html#bSymbologies">• Supported barcode symbologies</a></p>
+   <dl>
+      <dt>What is ISMN-13</dt>
+      <dd>A 13-digit identifier for editions of notated music, encoded using the EAN-13 barcode format with a 979-0 prefix.</dd>
+
+      <dt>Purpose of ISMN-13</dt>
+      <dd>To uniquely identify printed and digital music publications under the ISO and GS1/EAN systems.</dd>
+
+      <dt>Abbreviation Meaning</dt>
+      <dd>“International Standard Music Number” (13-digit format since 2008).</dd>
+
+      <dt>Where It's Used</dt>
+      <dd>
+         <ul>
+            <li>Printed sheet music</li>
+            <li>Digital sheet music</li>
+            <li>Music publishers</li>
+            <li>Libraries and archives</li>
+         </ul>
+      </dd>
+   </dl>
+
+   <p>See also:<br>
+      &nbsp;&nbsp;<a class="Link Smaller" href="TypeUPCEAN13.html">• EAN-13</a>
    </p>
-   
-   <ul class="Smaller" style="line-height:160%">
-      <li class="Link" onClick="scrollToElement('Access')">Accessing Decoderland™</li>
-      <li class="Link" onClick="scrollToElement('Types')">Supported data types</li>
-      <li class="Link" onClick="scrollToElement('Slash')">Inline Parsing</li>
-      <li class="Link" onClick="scrollToElement('Currency')">Currency conversion</li>
-      <li class="Link" onClick="scrollAndBlink('Symbologies')">Supported barcode symbologies</a></li>
-      <li class="Link" onClick="scrollAndBlink('ShortVideos')">Tips & Hints. Short videos</a></li>
-   </ul>
-
-   <a id="Access">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <p class="SubTitle">Accessing Decoderland™</p>
-   <div>
-      <img class="Shadow" src="../Images/ScannerMenu.png" width="64px" style="float:right;margin-left:8px;margin-bottom:8px">
-      <p>To access Decoderland™, tap the scanner button in the navigation area of the main screen.
-      </p>
-      <p>Decoderland™ supports three input sources: camera, still image, and keyboard input. By default, the camera input is active.
-         You can switch to the still image or keyboard input using the buttons in the toolbar at the bottom of the camera screen.
-         To access a specific source directly, swipe the scanner button slightly downward—a pop-up menu with all three sources will appear.
-      </p>
-   </div>
-   <p>You can also choose what happens when you tap the scanner button by setting your default action in the app settings.
-   </p>
-
-   <a id="Types">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <p class="SubTitle">Supported data types</p>
-   <p class="SubTitle">Product and Shipment Identification</p>
-   <ul>
-      <li> <b>GTIN-13 </b> - Identifies retail products using a 13-digit Global Trade Item Number. Supports also 8-, 12- and 14-digit codes. Commonly found on packaging worldwide.</li>
-      <li> <b>ITF-14 </b> - Identifies shipping containers, cartons, and outer packaging with a globally unique trade item number in a scannable format. Commonly used in logistics and chain tracking supply.</li>
-      <li><b>ISBN</b> - International Standard Book Number</li>
-      <li><b>ISMN</b> - International Standard Music Number</li>
-      <li><b>ISSN</b> - International Standard Serial Number</li>
-      <li><b>Tracking Numbers</b> Identifies barcodes used for shipping, logistics, and product tracking (e.g., UPC, FedEx, USPS).</li>
-      <li><b>SSCC</b> - Serial Shipping Container Code used to identify logistics units</li>
-      <li><b>NDC</b> - US “National Drug Code”</li>
-   </ul>
-
-   <p class="SubTitle">Personal and Contact Information</p>
-   <ul>
-      <li> <b>vCard / meCard </b> -  Digital contact cards that store names, phone numbers, and emails. Instantly add a contact by scanning.</li>
-      <li> <b>Phone </b> -  A direct phone number. Scan to make a call or save to contacts.</li>
-      <li> <b>Email </b> -  Encodes email address, subject, and message. Opens your email app with a pre-filled draft.</li>
-      <li> <b>SMS </b> -  Contains a phone number and message. Opens your messaging app ready to send.</li>
-   </ul>
-
-   <p class="SubTitle">Finance and Payments</p>
-   <ul>
-      <li><b>BIC / SWIFT  </b> - Identifies banks for international transactions. Ensures your payment reaches the correct institution.</li>
-      <li><b>IBAN </b> -  International Bank Account Numbers. Used for cross-border payments and transfers.</li>
-      <li><b>SEPA </b> - Single Euro Payments Area transfer format. Decodes payment data like IBAN, BIC, amount, and recipient.</li>
-      <li><b>SwissQR </b> - A special QR code that encodes payment information in a standardized way so invoices can be scanned and processed by banks and accounting software.</li>
-      <li><b>Credit / Debit Card Numbers</b> -  Decodes a card number for verification or transactions. CVV or sensitive data is not included.</li>
-      <li><b>ISIN </b> - The International Securities Identification Number — an international standard code that uniquely identifies a security globally for the purposes of facilitating clearing, reporting and settlement of trades.</li>
-      <li><b>CUSIP </b> - An alphanumeric code to identify a specific security, such as a stock or bond.</li>
-   </ul>
-
-   <p class="SubTitle">Travel and Transportation</p>
-   <ul>
-      <li><b>VIN Codes </b> -  Unique codes for identifying vehicles. Decodes manufacturer's</li>
-      <li><b>Boarding Passes</b> -  Used by airlines for check-in. Scanning retrieves flight and passenger information.</li>
-      <li><b>Baggage Tags</b> -  Issued by airlines to track luggage.</li>
-      <li><b>MRTD / MRZ</b> -  Machine-readable zones from passports, national IDs, US Green Cards, visa stickers etc. Scanning extracts official personal and travel details.</li>
-      <li><b>Vehicle registration plates</b> (Number plates) for some countries.</li>
-   </ul>
-
-   <p class="SubTitle">Network and Connectivity, IT</p>
-   <ul>
-      <li><b>WiFi</b> -  Includes network SSID, password, and encryption type.</li>
-      <li><b>IP</b> address lookup – Maps an IP address to a geographic location, providing estimated information such as country, region, city, time zone, and provider.</li>
-      <li><b>UUID</b> - Universally Unique Identifier.</li>
-      <li><b>Snowflake ID</b> - A form of unique identifier used in distributed computing.</li>
-   </ul>
-
-   <p class="SubTitle">Web and Location Links</p>
-   <ul>
-      <li><b>URL </b> - Web address in barcode form. Shows site preview and opens the site in your browser.</li>
-      <li><b>Location </b> - Geographic coordinates. Opens a map app to show the specified place.</li>
-   </ul>
-
-   <p class="SubTitle">Multimedia</p>
-   <ul>
-      <li><b>ISRC</b> - The International Standard Recording Code. Is used for uniquely identifying sound recordings and music video recordings.</li>
-      <li><b>ISWC</b> - The International Standard Musical Work Code is a unique identifier for musical works.</li>
-      <li><b>GRid</b> - The Global Release Identifier (GRid) is a system to identify releases of digital sound recordings (and other digital data) for electronic distribution.</li>
-      <li><b>ISAN, V-ISAN</b> - The International Standard Audiovisual Number is a unique identifier for audiovisual works and related versions.</li>
-   </ul>
-
-   <p class="SubTitle">Calendar and Events</p>
-   <ul>
-      <li><b>iCalendar / ICS Events</b> - Decodes event title, date, time, location. Scanning can add the event to your calendar.</li>
-   </ul>
-
-   <p class="SubTitle">ID and Regulatory Codes</p>
-   <ul>
-      <li><b>AAMVA / ANSI</b> - Driver’s License and ID Card. Decodes complete set of all encoded tags.</li>
-      <li><b>ORCID</b> - An Open Researcher and Contributor ID used to uniquely identify authors and contributors of scholarly communication.</li>
-      <li><b>DOI</b> - A digital object identifier or handle used to uniquely identify various objects.</li>
-      <li><b>URN</b> - Uniform Resource Name. Decodes some types on URN namespaces.</li>
-      <li><b>SSN</b> - US Social Security number.</li>
-   </ul>
-   <p>and more...</p>
-
-   <a id="Slash">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <p id="bSlash" class="SubTitle">Inline Parsing</p>
-   <p>The Inline Parsing feature allows you to quickly decode codes without searching manually.
-   </p>
-   <p>How it works:</p>
-   <ul>
-      <li>Type desired code.</li>
-      <li>Decoderland™ will attempt to identify and decode it immediately.</li>
-   </ul>
-
-   <p>Supported code systems include:</p>
-   <ul>
-     <li>International Organization for Standardization (ISO) country codes:
-       <ul>
-         <li>ISO 3166-1 alpha-2 (e.g., /US → United States)</li>
-         <li>ISO 3166-1 alpha-3 (e.g., /USA → United States)</li>
-         <li>ISO 3166-1 numeric (e.g., /840 → United States)</li>
-       </ul>
-     </li>
-     <li>Federal Information Processing Standard (FIPS) 10-4 country and region codes (e.g., /US34 → New Jersey)</li>
-     <li>Global Standards 1 (GS1) country codes (e.g., /301 → France)</li>
-     <li>International Telecommunication Union (ITU) country codes (e.g., /E → Spain)</li>
-     <li>ITU telephone country codes (E.123) (e.g., /34 → Spain)</li>
-     <li>ITU mobile country codes (MCC) (e.g., /262 → Germany)</li>
-     <li>North American Numbering Plan (NANP) area codes (e.g., /575 → Las Cruces, New Mexico, US)</li>
-     <li>International Olympic Committee (IOC) country codes (e.g., /POR → Portugal)</li>
-     <li>International Federation of Association Football (FIFA) country codes (e.g., /NED → Netherlands)</li>
-     <li>International Union of Railways (UIC) country codes (e.g., /10 → Finland)</li>
-     <li>American National Standards Institute (ANSI) U.S. state and territory abbreviations (e.g., /CT → Connecticut, US)</li>
-     <li>ISO 639 language codes — 2- and 3-letter forms (e.g., /zu → Zulu)</li>
-     <li>ISO 15924 script codes (e.g., /Deva → Devanagari)</li>
-     <li>ISO 4217 currency alphabetic codes (e.g., /GBP → British Pound)</li>
-     <li>ISO 4217 currency numeric codes (e.g., /978 → Euro)</li>
-     <li>Airline codes: IATA (e.g., /BA → British Airways), ICAO (e.g., /BAW → British Airways), and numeric airline codes</li>
-     <li>Airport codes: IATA (e.g., /JFK → John F. Kennedy International Airport), ICAO (e.g., /KJFK → John F. Kennedy International Airport)</li>
-   </ul>
-   <div>…and more coming soon.</div>
-
-   <a id="Currency">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <p id="bCurrency" class="SubTitle">Currency conversion</p>
-   <p>Decoderland™ can recognize valid numbers as amounts and show currency conversion rates for your selected currencies.
-      This works with all input types: camera, still image, and keyboard. To activate the converter from the keyboard, just type a space (or tap return key) followed by amount.
-   </p>
-   <p>Tap the left or right side of the converter frame to choose the currency you want. On the manual input screen,
-      a long press lets you set your own conversion rate.
-   </p>
-   <p>You can also control the converter’s behavior in the app settings.
-   </p>
-
-   <a id="Symbologies">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <p id="bSymbologies" class="SubTitle" style="margin-bottom:8px">Supported barcode symbologies</p>
-   <ul style="line-height:180%">
-      <li class="Link"><a class="Link" href="TypeCode128.html">Code-128</a></li>
-      <li class="Link"><a class="Link" href="TypeEAN13.html">EAN-13</a></li>
-      <li class="Link"><a class="Link" href="TypeEAN8.html">EAN-8</a></li>
-      <li class="Link"><a class="Link" href="TypeGS1DataBar.html"><nobr>GS1 DataBar</nobr></a>, <a class="Link" href="TypeGS1DataBarExpanded.html"><nobr>Expanded GS1 DataBar</nobr></a>, <a class="Link" href="TypeGS1DataBarLimited.html"><nobr>Limited GS1 DataBar</nobr></a></li>
-      <li class="Link"><a class="Link" href="TypeUPCA.html">UPC-A</a></li>
-      <li class="Link"><a class="Link" href="TypeUPCE.html">UPC-E</a></li>
-      <li class="Link"><a class="Link" href="TypeQR.html">QR Code</a>, <a class="Link" href="TypeQRMicro.html">Micro QR Code</a></li>
-      <li class="Link"><a class="Link" href="TypeDataMatrix.html">Data Matrix</a></li>
-      <li class="Link"><a class="Link" href="TypePDF417.html">PDF417</a>, <a class="Link" href="TypePDF417Micro.html">Micro PDF417</a></li>
-      <li class="Link"><a class="Link" href="TypeAztec.html">Aztec</a></li>
-      <li class="Link"><a class="Link" href="TypeCode39.html">Code-39</a>, <a class="Link" href="TypeCode39checksum.html"><nobr>Code-39 Mod 43</nobr></a>, <a class="Link" href="TypeCode39FullASCII.html"><nobr>Code-39 Full ASCII</nobr></a></li>
-      <li class="Link"><a class="Link" href="TypeCode93.html">Code-93</a>, <a class="Link" href="TypeCode93i.html">Code-93i</a></li>
-      <li class="Link"><a class="Link" href="Type2of5.html">Interleaved 2 of 5</a></li>
-      <li class="Link"><a class="Link" href="TypeITF14.html">ITF-14</a></li>
-      <li class="Link"><a class="Link" href="TypeCodabar.html">Codabar</a></li>
-      <li class="Link"><a class="Link" href="TypeISBN13.html">ISBN-13</a>, <a class="Link" href="TypeISMN13.html">ISMN-13</a>, <a class="Link" href="TypeISSN13.html">ISSN-13</a></li>
-   </ul>
-
-   <p>If the Barcode Decoder fails to recognize supported barcode symbology or detect its structured contents, please send us feedback
-      with a barcode image attached.
-   </p>
-   <p><span class="Link Smaller" onClick="RunCommand(null,'ScanFeedback')">• Send Feedback</span>
-   </p>
-
-   <a id="ShortVideos">
-      <div class="Separator"></div>
-      <div class="CharLogo">&#x2610;</div>
-   </a>
-   <div><img src="../Images/YouTubeLogo.png" style="width:89px;height:20px"></div>
-   <p id="bShortVideos" class="SubTitle" style="margin-bottom:8px">Tips & Hints. Short videos</p>
-   <ul style="line-height:180%">
-      <li class="Link" onClick="showVideo('1wc1md4tC68')">Global Trade Item Number scan</li>
-      <li class="Link" onClick="showVideo('ILDU40ytYFQ')">Parcel tracking</li>
-      <li class="Link" onClick="showVideo('qs5OUaV9dHU')">Currency converter</li>
-      <li class="Link" onClick="showVideo('Nxloskl57pQ')">Locations & Maps</li>
-      <li class="Link" onClick="showVideo('ZMljItxtlBU')">Electronic business card - vCard</li>
-      <li class="Link" onClick="showVideo('MqzC2WtKUdA')">Adding passport with machine-readable zone</li>
-      <li class="Link" onClick="showVideo('uoSrP90O5K4')">VIN code scan</li>
-      <li class="Link" onClick="showVideo('zC-_nBDG1BY')">Boarding pass scan</li>
-      <li class="Link" onClick="showVideo('lyITS9uXNDw')">Swiss QR Code decoder</li>
-      <li class="Link" onClick="showVideo('I-6_9w6aZXI')">Driver’s License</li>
-   </ul>
-   <br>&nbsp;
 
    <!-- Navigation -->
-   <table cellPadding="0px" cellSpacing="0px" style="width:100%">
+   <table cellPadding="0px" cellSpacing="0px" style="width:100%;margin-top:24px">
       <tr>
-         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="AppleWallet.html"><i>&#x25C0;&nbsp;&nbsp;Apple Wallet</i></a></li></td>
+         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="TypeISBN13.html"><i>&#x25C0;&nbsp;&nbsp;ISBN-13</i></a></li></td>
          <td><nobr> &nbsp; &nbsp; </nobr></td>
-         <td class="RT-Align"><a id="nextTopic" class="Link Smaller" href="TypeCode128.html"><i>Code-128&nbsp;&nbsp;&#x25B6;</i></a></li></td>
+         <td class="RT-Align"><a id="nextTopic" class="Link Smaller" href="TypeISSN13.html"><i>ISSN-13&nbsp;&nbsp;&#x25B6;</i></a></li></td>
       </tr>
    </table>
 
    <div class="Separator"></div>
    <div class="CharLogo"><span style="font-family:GillSans Light;font-size:10pt">Store Cards - your cards, always within reach!</span>&nbsp;&#x2610;</div>
-
-   <!-- FAQ -->
-   <table cellPadding="0px" cellSpacing="0px" style="width:100%">
-       <tr style="text-align:center">
-          <td><a class="Link" href="FAQ.html"><img id="FAQIcon" class="PageIcon" src="../Images/FAQ_W.png" width="120px"></a></td>
-       </tr>
-       <tr>
-          <td style="text-align:center" onClick="RunCommand(null,'Feedback')">Did not find an answer to your question?<br>Tap here &#xE174; to ask now ...</div></td>
-       </tr>
-   </table>
 
 </body>
 </html>
