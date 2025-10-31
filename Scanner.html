@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>ISSN-13</title>
+<title>Decoderland™</title>
 <!-- ---------------------------------------------------------------------------
    PROJECT:  StoreCards Application
    VERSION:  8.1.162
@@ -9,10 +9,10 @@
 * REPRODUCTION OF ANY KIND, IN WHOLE OR IN PART IN ANY FORM IS STRICTLY PROHIBITED *
 ************************************************************************************
    DESCRIPTION:   Decoderland™
-   FILE NAME:     HTML/en/TypeISSN13.html
+   FILE NAME:     HTML/en/Scanner.html
    LANGUAGE:      English
    AUTHOR:        Rezo Mesarkishvili ( rezo.mesarkishvili@gmail.com )
-   LAST REVISION: July 31, 2025 by RM
+   LAST REVISION: August 18, 2025 by RM
 ---------------------------------------------------------------------------- -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -20,62 +20,86 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
 <link rel="styleSheet" type="text/css" href="../Styles/Common.css" />
+<style>
+ul
+{
+   margin-left:16px;
+   margin-top:0px;
+   padding-top:0px;
+   margin-bottom:12px;
+}
+ul ul
+{
+   list-style: none;
+   margin-left:0px;
+   padding-left:0px;
+}
+ul ul li::before
+{
+   content: "- ";
+   position: relative;
+}
+</style>
 <script type="text/javascript" charset="UTF-8" src="../Scripts/SmoothScroll.js"></script>
 <script type="text/javascript" charset="UTF-8" src="../Scripts/Common.js"></script>
 
 <body onLoad="onLoadPage()">
 
-   <!-- Navigation -->
-   <table cellPadding="0px" cellSpacing="0px" style="width:100%;margin-bottom:24px">
-      <tr>
-         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="TypeISMN13.html"><i>&#x25C0;&nbsp;&nbsp;ISMN-13</i></a></li></td>
-      </tr>
-   </table>
+   <div class="SuperTitle"><img id="PageIcon" class="PageIcon" src="../Images/ScannerW.png" width="56px"><br>Decoderland™</div>
+   <div class="Title">Catalogs</div>
 
-   <p class="SuperTitle">Decoderland™</p>
-   <div style="text-align:center"><img id="PageIcon2" src="../Images/TypeISSN13.gif" width="226px"></div>
-   <div class="Title">ISSN-13</div>
-
-   <p><a class="Link" href="Scanner.html#bSymbologies">• Supported barcode symbologies</a></p>
-   <dl>
-      <dt>What is ISSN-13</dt>
-      <dd>ISSN is an eight-digit code, divided by a hyphen into two four-digit numbers. The last digit is a check digit.
-          ISSNs can be encoded in EAN-13 bar codes with a 977 prefix, followed by the 7 main digits of the ISSN
-          (the check digit is not included), followed by 2 publisher-defined digits, followed by the EAN check digit.
-          Unlike the ISBN code, ISSN is an anonymous identifier associated with a serial title, containing no information
-          as to the publisher or its location.
-      </dd>
-
-      <dt>Purpose of ISSN-13</dt>
-      <dd>To uniquely identify a periodical publication globally under the GS1/EAN system.</dd>
-
-      <dt>Abbreviation Meaning</dt>
-      <dd>An “International Standard Serial Number” (since 1976).</dd>
-
-      <dt>Where It's Used</dt>
-      <dd>
-         <ul>
-            <li>Periodical publication</li>
-            <li>Libraries</li>
-            <li>Publishing industry</li>
-         </ul>
-      </dd>
-   </dl>
-
-   <p>See also:<br>
-      &nbsp;&nbsp;<a class="Link Smaller" href="TypeUPCEAN13.html">• EAN-13</a>
-   </p>
-
-   <!-- Navigation -->
-   <table cellPadding="0px" cellSpacing="0px" style="width:100%;margin-top:24px">
-      <tr>
-         <td class="LT-Align"><a id="prevTopic" class="Link Smaller" href="TypeISMN13.html"><i>&#x25C0;&nbsp;&nbsp;ISMN-13</i></a></li></td>
-      </tr>
-   </table>
-
-   <div class="Separator"></div>
-   <div class="CharLogo"><span style="font-family:GillSans Light;font-size:10pt">Store Cards - your cards, always within reach!</span>&nbsp;&#x2610;</div>
+   <p>United Nations</p>
+   <ul>
+      <li onClick="RunCommand(null,'#B')">Countries and Territories</li>
+   </ul>
+   <p>International Organization for Standardization (ISO):</p>
+   <ul>
+      <li onClick="RunCommand(null,'#C')">Alpha-2 Country Codes</li>
+      <li onClick="RunCommand(null,'#D')">Alpha-3 Country Codes</li>
+      <li onClick="RunCommand(null,'#E')">Numeric Country Codes</li>
+      <li onClick="RunCommand(null,'#9')">Language Codes & Scripts</li>
+      <li onClick="RunCommand(null,'#a')">Writing System (Scripts) & Codes</li>
+      <li onClick="RunCommand(null,'#b')">Writing System (Scripts) & Numeric Codes</li>
+      <li onClick="RunCommand(null,'#Y')">Currency Codes, Names and Symbols</li>
+      <li onClick="RunCommand(null,'#Z')">Currency Numeric Codes, Names and Symbols</li>
+   </ul>
+   <p>Federal Information Processing Standards (FIPS):</p>
+   <ul>
+      <li onClick="RunCommand(null,'#F')">Country Codes
+      <li onClick="RunCommand(null,'#H')">World Region Codes</li>
+   </ul>
+   <p>International Telecommunication Union (ITU):</p>
+   <ul>
+      <li onClick="RunCommand(null,'#5')">Country Codes</li>
+      <li onClick="RunCommand(null,'#L')">Country Dialing Codes</li>
+      <li onClick="RunCommand(null,'#7')">Mobile Country Codes (MCC)</li>
+   </ul>
+   <p>Various</p>
+   <ul>
+      <li onClick="RunCommand(null,'#G')">Global Standards 1 (GS1) country codes</li>
+      <li onClick="RunCommand(null,'#8')">International Vehicle Registration Codes / Vehicle Registration Identification (VRI) codes</li>
+      <li onClick="RunCommand(null,'#3')">International Olympic Committee (IOC) - Country Codes</li>
+      <li onClick="RunCommand(null,'#4')">International Federation of Association Football (FIFA) - Country Codes</li>
+      <li onClick="RunCommand(null,'#6')">International Union of Railways (UIC) - Country Codes</li>
+      <li onClick="RunCommand(null,'#T')">AAMVA Jurisdiction Code List for States and Territories</li>
+      <li onClick="RunCommand(null,'#N')">North American Numbering Plan (NANP) codes</li>
+      <li onClick="RunCommand(null,'#1')">International Morse code</li>
+   </ul>
+   <p>International Air Transport Association (IATA):</p>
+   <ul>
+      <li onClick="RunCommand(null,'#I')">Airline Codes</li>
+      <li onClick="RunCommand(null,'#P')">Airports Codes</li>
+   </ul>
+   <p>International Civil Aviation Organization (ICAO):</p>
+   <ul>
+      <li onClick="RunCommand(null,'#J')">ICAO Airline Code</li>
+   </ul>
+   <ul>
+      <li onClick="RunCommand(null,'#R')">Traffic police region codes (RU)</li>
+      <li onClick="RunCommand(null,'#S')">ISO Region Codes (RU)</li>
+      <li onClick="RunCommand(null,'#O')">ОКТМО Numeric Region Codes (RU)</li>
+      <li onClick="RunCommand(null,'#M')">Roskomnadzor and and the Ministry of Digital Development, Communications and Mass Media - Region Dialing Codes (RU)</li>
+   </ul>
 
 </body>
 </html>
-
